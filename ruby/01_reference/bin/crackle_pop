@@ -3,4 +3,3 @@ $LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib" )
 
 require 'crackle_pop'
 crackle_pop = CracklePop.new.run
-
