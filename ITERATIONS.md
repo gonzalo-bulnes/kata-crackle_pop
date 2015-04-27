@@ -5,6 +5,33 @@ Here are some note I took while itereating on _CracklePop_. Most of them are fai
 
 Iterations are ordered from the most recent to the older, I think that it more or less corresponds to sorting them by decreasing interest.
 
+Iteration 5 (code)
+------------------
+
+Let's see how adequate is Ruby for the task (from a performance point of view).
+
+### Code
+
+See [c/01_reference](c/01_reference).
+
+### Results
+
+```bash
+# Ruby
+time ./ruby/01_reference/bin/benchmark 2>/dev/null
+
+real  0m1.312s
+user  0m1.044s
+sys 0m0.268s
+
+# C (twice as fast as Ruby)
+time ./c/01_reference/bin/benchmark 1>/dev/null
+
+real  0m0.068s
+user  0m0.063s
+sys 0m0.004s
+```
+
 Iteration 3 (paper and code)
 ----------------------------
 
