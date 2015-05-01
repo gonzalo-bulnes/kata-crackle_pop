@@ -8,5 +8,7 @@ Feel free to add implementations in any language.
 Available implementations
 -------------------------
 
+See the [`ITERATIONS`](ITERATIONS.md) file for comments about the successive implementations.
+
 - **Ruby**
   - [simple reference implementation](ruby/01_reference)
