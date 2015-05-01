@@ -1,3 +1,5 @@
+See also: [<< Previous implementation](..../ruby/02_pattern), [Next implementation >>](../02_print_to_stderr)
+
 Crackle Pop (ANSI C)
 ====================
 

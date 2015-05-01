@@ -13,6 +13,7 @@ Let's see how adequate is Ruby for the task (from a performance point of view).
 ### Code
 
 See [c/01_reference](c/01_reference).
+See also [c/02_print_to_stderr](c/02_print_to_stderr) (an attempt to standardize output to STDERR).
 
 ### Results
 
@@ -30,6 +31,15 @@ time ./c/01_reference/bin/benchmark 1>/dev/null
 real  0m0.068s
 user  0m0.063s
 sys 0m0.004s
+
+# Unexpectedly even slower than Ruby!
+# (If you know why, please open an issue to explain it to me!)
+$ time ./c/02_print_to_stderr/bin/benchmark 2>/dev/null
+
+real 0m0.232s
+user 0m0.112s
+sys  0m0.120s
+
 ```
 
 Iteration 3 (paper and code)
