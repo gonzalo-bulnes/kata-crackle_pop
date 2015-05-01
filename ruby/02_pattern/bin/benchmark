@@ -2,4 +2,9 @@
 $LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib" )
 
 require 'crackle_pop'
-CracklePop.new.run
+
+ENOUGH = 10_000
+
+ENOUGH.times do
+  CracklePop.new.run
+end

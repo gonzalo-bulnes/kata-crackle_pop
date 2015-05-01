@@ -24,7 +24,7 @@ Iteration 3 (paper and code)
 
 ### Code
 
-See [ruby/02_reference](ruby/02_reference).
+See [ruby/02_pattern](ruby/02_pattern).
 
 ### Afterthoughts
 

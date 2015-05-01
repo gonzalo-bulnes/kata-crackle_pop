@@ -22,4 +22,7 @@ bundle install
 
 # run the full test suite
 rspec spec
+
+# benchmark (10.000 iterations)
+time ./bin/benchmark 2>/dev/null
 ```
