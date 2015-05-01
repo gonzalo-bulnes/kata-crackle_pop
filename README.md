@@ -13,6 +13,7 @@ See the [`ITERATIONS`](ITERATIONS.md) file for comments about the successive imp
 - **Ruby**
   - [simple reference implementation](ruby/01_reference)
   - [pattern-based implementation](ruby/02_pattern)
+  - [pattern-based re-usable implementation](ruby/03_reusable)
 
 - **C**
   - [simple reference implementation](c/01_reference)

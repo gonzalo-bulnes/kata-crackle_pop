@@ -5,6 +5,35 @@ Here are some note I took while itereating on _CracklePop_. Most of them are fai
 
 Iterations are ordered from the most recent to the older, I think that it more or less corresponds to sorting them by decreasing interest.
 
+Iteration 6
+-----------
+
+Yesterday, I received feedback from [another _kata_][robot] review, which pointed at not taking benefit of the Object-Oriented capabilities of Ruby. This morning I asked myself how that could apply to my CracklePop implementations (which are not very object-oriented) and wrote [ruby/04_object_oriented](ruby/04_object_oriented). I like that code much more than the previous iterations, even if I believe there should be a way to ensure that the extensions of `Fixnum` and `Range` don't interfere elsewhere.
+
+Just to have an idea, I also added the equivalent [ruby/03_reusable_pattern](ruby/03_reusable_pattern) to compare both benchamrks!
+
+  [robot]: https://github.com/gonzalo-bulnes/kata-toy_robot_simulator
+
+### Code
+
+See [ruby/03_reusable_pattern](ruby/03_reusable_pattern) and [ruby/04_object_oriented](ruby/04_object_oriented).
+
+### Benchmark results
+
+```bash
+time ./ruby/01_reference/bin/benchmark 2>/dev/null
+
+real  0m1.323s
+user  0m1.039s
+sys 0m0.281s
+
+time ./ruby/03_reusable_pattern/bin/benchmark 2>/dev/null
+
+real  0m1.354s
+user  0m1.089s
+sys 0m0.263s
+```
+
 Iteration 5 (code)
 ------------------
 
