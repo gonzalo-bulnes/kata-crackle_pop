@@ -1,4 +1,4 @@
-See also: [Next implementation >>](../02_pattern)
+See also: [<< Previous implementation](../01_reference), [Next implementation >>](../../c/01_reference)
 
 Crackle Pop (Ruby)
 ==================
