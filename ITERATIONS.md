@@ -5,6 +5,32 @@ Here are some note I took while itereating on _CracklePop_. Most of them are fai
 
 Iterations are ordered from the most recent to the older, I think that it more or less corresponds to sorting them by decreasing interest.
 
+Iteration 3 (paper and code)
+----------------------------
+
+### Observations
+
+- the previous algorithm did not cover properly the beginning of the series (the part before all 'since' statements, where no rule does still apply
+- there may be some regularity in the crackle, pop, cracklepop sequences
+- confirmed! There is a pattern of period 15. 15 appears to be the divider for the least frequently applied rule, but also more significantly it's the product of the two prime dividers, 3 and 5
+
+### Algorithm
+
+1. define the rules
+1. determine the pattern length
+1. determine the pattern
+1. determine how many times it should be applied completely and which part of it should be applied after that (e.g. 100/15 -> 6|10)
+1. loop around the complete patterns and the partial one.
+
+### Code
+
+See [ruby/02_reference](ruby/02_reference).
+
+### Afterthoughts
+
+  * it works
+  * it could be used to code CracklePops for any couple of prime numbers
+
 Iteration 2 (paper)
 -------------------
 
@@ -30,7 +56,7 @@ Iteration 2 (paper)
 
 ### Code
 
-See [ruby/02_reference](ruby/02_reference).
+There is no code for this iteration.
 
 ### Afterthoughts
 

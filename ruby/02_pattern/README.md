@@ -1,4 +1,4 @@
-See also: [Next implementation >>](../02_pattern)
+See also: [<< Previous implementation](../01_reference)
 
 Crackle Pop (Ruby)
 ==================
@@ -22,4 +22,7 @@ bundle install
 
 # run the full test suite
 rspec spec
+
+# benchmark (10.000 iterations)
+time ./bin/benchmark 2>/dev/null
 ```
