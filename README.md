@@ -14,6 +14,7 @@ See the [`ITERATIONS`](ITERATIONS.md) file for comments about the successive imp
   - [simple reference implementation](ruby/01_reference)
   - [pattern-based implementation](ruby/02_pattern)
   - [pattern-based re-usable implementation](ruby/03_reusable)
+  - [object-oriented reference implementation](ruby/04_slower_but_idiomatic)
 
 - **C**
   - [simple reference implementation](c/01_reference)

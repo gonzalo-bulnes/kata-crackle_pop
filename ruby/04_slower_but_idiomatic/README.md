@@ -1,4 +1,4 @@
-See also: [<< Previous implementation](../02_pattern), [Next implementation >>](../04_slower_but_idiomatic)
+See also: [<< Previous implementation](../03_reusable_pattern)
 
 Crackle Pop (Ruby)
 ==================
