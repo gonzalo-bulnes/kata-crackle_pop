@@ -1,7 +1,7 @@
 See also: [<< Previous implementation](../03_reusable_pattern)
 
-Crackle Pop (Ruby)
-==================
+Crackle Pop (Ruby idiomatic reference implementation)
+=====================================================
 
 > Prints out the numbers 1 to 100 (inclusive). If the number is divisible by 3, prints _Crackle_ instead of the number. If it's divisible by 5, prints _Pop_. If it's divisible by both 3 and 5, prints _CracklePop_.
 
