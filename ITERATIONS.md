@@ -5,6 +5,62 @@ Here are some note I took while itereating on _CracklePop_. Most of them are fai
 
 Iterations are ordered from the most recent to the older, I think that it more or less corresponds to sorting them by decreasing interest.
 
+Iteration 6
+-----------
+
+Yesterday, I received feedback from [another _kata_][robot] review, which pointed at not taking benefit of the Object-Oriented capabilities of Ruby. This morning I asked myself how that could apply to my CracklePop implementations (which are not very object-oriented, nor idiomatic) and wrote [ruby/04_slower_but_idiomatic](ruby/04_slower_but_idiomatic).
+
+Just to have an idea, I also added the equivalent [ruby/03_reusable_pattern](ruby/03_reusable_pattern) to compare both benchmarks. Making the pattern-based implementation re-usable lead to a much more object-oriented implementation and I find the result much better than the previous ones.
+
+  [robot]: https://github.com/gonzalo-bulnes/kata-toy_robot_simulator
+
+### Code
+
+See [ruby/03_reusable_pattern](ruby/03_reusable_pattern) and [ruby/04_slower_but_idiomatic](ruby/04_slower_but_idiomatic).
+
+### Benchmark results
+
+```bash
+time ./ruby/01_reference/bin/benchmark 2>/dev/null
+
+real 0m1.323s
+user 0m1.039s
+sys  0m0.281s
+
+time ./ruby/03_reusable_pattern/bin/benchmark 2>/dev/null
+
+real 0m1.354s
+user 0m1.089s
+sys  0m0.263s
+```
+
+The speed improvement is not significant on small ranges.
+
+
+```bash
+# 10_000 iterations within a (1..2000) range instead of (1..100)
+time ./ruby/03_reusable_pattern/bin/benchmark 2>/dev/null
+
+real 0m26.163s
+user 0m20.711s
+sys  0m5.440s
+
+time ./ruby/04_slower_but_idiomatic/bin/benchmark 2>/dev/null
+
+real 0m31.936s
+user 0m26.445s
+sys  0m5.475s
+```
+
+But becomes better when ranges get larger (~20% better in the `(1..2000)` range).
+
+### Conclusions
+
+The pattern-based implementation is faster, and gets better when the range to crackle_pop becomes larger.
+On the other side, the slower implementation is also much more idiomatic, may be more pleasant to read and use, and is also less hacky (the pattern idea is nice, but very specific to the problem to solve).
+
+Since CracklePop does produce a human-intended output, it's not very likely to be used on very large ranges. Let's prefer the [idiomatic implementation](ruby/04_slower_but_idiomatic). (Even if the [pattern-based implmentation](ruby/03_reusable_pattern) is much cooler!)
+
 Iteration 5 (code)
 ------------------
 
