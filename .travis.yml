@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - "2.1.5"
+script:
+  - cd ruby/01_reference && bundle install && echo 'Ruby reference implementation' && bundle exec rspec spec
+  - cd ../../ruby/02_pattern && bundle install && echo 'Ruby pattern-based implementation' && bundle exec rspec spec
+  - cd ../../ruby/03_reusable_pattern && bundle install && echo 'Ruby re-usable pattern-based implementation' && bundle exec rspec spec
+  - cd ../../ruby/04_slower_but_idiomatic && bundle install && echo 'Ruby idiomatic reference implementation' && bundle exec rspec spec
